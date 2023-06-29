@@ -53,7 +53,9 @@ Following Machine Learning models developed for model selection and uploaded to 
 - Random Forest
 - Neural Network MLP
 
-<img width="748" alt="image" src="https://github.com/cheerspankaj/MADS_Milestone-2/assets/82276130/a460fadc-5165-4a6e-8d40-811d1a2cb6e3">
+<img width="750" alt="image" src="https://github.com/cheerspankaj/MADS_Milestone-2/assets/82276130/06e5b86b-7545-4ce6-bb72-e71fd1885d32">
+
+** Table: Summarizing the accuracy score for all models assessed
 
 The problem at hand involves binary text classification. We assessed several supervised learning classification models to predict the class labels. We started with a Dummy classifier as a baseline model and compared it with other models. For linear models, we applied Logistic Regression and used the TF-IDF feature for comparison. We also utilized Naive Bayes (BernoulliNB) classifiers, which are efficient for text data classification.
 
