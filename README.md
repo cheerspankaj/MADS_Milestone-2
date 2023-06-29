@@ -51,8 +51,15 @@ Following Machine Learning models developed for model selection and uploaded to 
 - Gradient Boositng
 - Logistic Regression 
 - Random Forest
-- NN MLP
+- Neural Network MLP
 
 <img width="748" alt="image" src="https://github.com/cheerspankaj/MADS_Milestone-2/assets/82276130/a460fadc-5165-4a6e-8d40-811d1a2cb6e3">
+
+The problem at hand involves binary text classification. We assessed several supervised learning classification models to predict the class labels. We started with a Dummy classifier as a baseline model and compared it with other models. For linear models, we applied Logistic Regression and used the TF-IDF feature for comparison. We also utilized Naive Bayes (BernoulliNB) classifiers, which are efficient for text data classification.
+
+Next, we implemented ensemble decision tree classifiers, namely RandomForest and XGBoost, which combine multiple models to create powerful classifiers. These models address overfitting and leverage hierarchical partitions among categories.
+
+We also explored a Neural Network model, specifically the Multilayer Perceptron (MLP), which achieved competitive scores with the available training data. This sparked our interest in using pre-trained models like BERT for further assessment, which is discussed in the subsequent sections.
+
 
 
