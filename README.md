@@ -148,8 +148,24 @@ Analysis result suggests that adding sentence topic as a feature from LDA topic 
 
 ### Clustering
 
+#### K-Means
+
 We aimed to identify clusters within a cleaned text dataset. The dataset was transformed into a sparse format using TFIDF vectorization, resulting in a random sample of 50,000 training instances with approximately 2,000 features. To determine the appropriate number of clusters (K) for K-means clustering, we employed "The Elbow Method" technique.
 
 <img width="688" alt="image" src="https://github.com/cheerspankaj/MADS_Milestone-2/assets/82276130/f2505bce-ea9d-458e-af4c-abd4b2ee2425">
 
 *source: Project Code*
+
+K-means visualization does not show any clear clusters between simple and complex sentences. Our understanding is that the features derived from the documents are not very similar and hence not able to form distinct clusters, we would like to further investigate to get more insights.
+
+#### T-SNE & MDS
+
+In high-dimensional data analysis, it is crucial to explore dimensionality-reduced datasets obtained from techniques like t-SNE, UMAP, or MDS. We applied t-SNE, UMAP, and MDS to a random sample of 10,000 instances from the training dataset, which had been transformed into a vectorized form with 380 features (dimensions).
+
+<img width="790" alt="image" src="https://github.com/cheerspankaj/MADS_Milestone-2/assets/82276130/3d92729d-24d6-41fe-aa9f-1728ca6022a5">
+
+*Figure1: T-SNE visualization   Figure2: MDS Visualization*
+
+The T-SNE and MDS visualizations did not reveal any distinct clusters or patterns in the lower-dimensional feature space. However, further investigation is needed to understand the empty region between the outer ring and the center cluster in the T-SNE visualization. Both T-SNE and MDS showed that features from both simple and not simple sentences are scattered across all regions, indicating a lack of clear differentiation.
+
+Project Git Repository link - https://github.com/cheerspankaj/MADS_Milestone-2
