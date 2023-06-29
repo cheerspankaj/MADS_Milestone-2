@@ -28,3 +28,12 @@ data source: [Link](https://www.kaggle.com/competitions/umich-siads-696-f22-pred
   Data Source: [Link](https://www.kaggle.com/competitions/umich-siads-696-f22-predicting-text-difficulty)
 - AoA_51715_words.csv :: “List of approximate age (In years) when a word was learned, for 50k English words.”
   Data Source: [Link](https://www.kaggle.com/competitions/umich-siads-696-f22-predicting-text-difficulty)
+
+## Data Preparation and Feature Engineering
+
+Our data preparation and feature engineering process began with a manual review of the datasets. This involved examining the dataset's columns, assessing balance, identifying missing values, and determining the best features for modeling purposes.
+During preprocessing, we applied commonly used techniques in NLP pipelines such as lowercasing, removal of special characters, stopwords, sentence tokenization, and words lemmatization. This step aimed to clean the data, perform analysis, and generate new features from the existing dataset while evaluating their impact on model performance.
+Since the problem involved text classification, we explored different approaches to convert text into feature vectors, including CountVectorizer, TF-IDF (Term Frequency-Inverse Document Frequency), and Doc2Vec.
+We initially extracted 20 features from the provided datasets (listed in Appendix - 2.a) and narrowed it down to thirteen features (listed in Appendix - 2.b) through feature ablation. These features were used to build supervised and unsupervised learning models for the binary classification prediction problem.
+Finally, we transformed the entire dataset of features into a vectorized form readable by machine learning algorithms for text classification purposes.
+
