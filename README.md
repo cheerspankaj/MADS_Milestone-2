@@ -71,11 +71,13 @@ The selected parameters for hyperparameter tuning included 'criterion' (gini or 
 
 Based on the initial analysis, Random forest classifier selected for evaluation pipelines. Below figures show the model evaluation analysis.
 
-<img width="853" alt="image" src="https://github.com/cheerspankaj/MADS_Milestone-2/assets/82276130/d347fcee-0158-460f-9adf-48875d14e903">
+<img width="847" alt="image" src="https://github.com/cheerspankaj/MADS_Milestone-2/assets/82276130/bc3fc2cc-ecf3-45ef-a6ad-eade3d412375">
 
-<img width="839" alt="image" src="https://github.com/cheerspankaj/MADS_Milestone-2/assets/82276130/23043965-ad1b-4c3a-aaf6-dd1d8154f83b">
+Figure: Classification Report and Confusion Matrix for Random Forest Classifier, source: Project Code
 
-Source: Project Notebook Code
+<img width="816" alt="image" src="https://github.com/cheerspankaj/MADS_Milestone-2/assets/82276130/6b227e9c-c0d8-4dd7-92dc-a8efe3984bc2">
+
+Figure: Precision Recall and ROC-AUC curve for Random Forest Classifier, Source: Project Code
 
 ### Failure Analysis
 
@@ -86,6 +88,7 @@ For Logistic Regression, Random Forest, and BERT models, we employed Local Inter
 To assess the model's sensitivity and generalizability, we conducted sensitivity analysis using the best extracted parameters. Specifically, we focused on max_depth and n_estimators as the parameters of interest. By plotting these parameters against the accuracy scores, we found that the model performed optimally with a max depth of 9. Choosing a higher max depth led to a drop in the score, indicating the risk of overfitting or underfitting. Additionally, when analyzing the hyperparameter n_estimators, we noticed a slight increase in the score at a value of 300, without any change in the training score.
 
 <img width="784" alt="image" src="https://github.com/cheerspankaj/MADS_Milestone-2/assets/82276130/0f7c30a1-0b0d-4815-a16d-01990fcbbb10">
+
 Figure: Sensitivity Analysis with max_depth and n_estimators, source: Project Code
 
 ### Learning Curve
@@ -93,5 +96,6 @@ Figure: Sensitivity Analysis with max_depth and n_estimators, source: Project Co
 The learning curve analysis involved plotting the amount of training data on the x-axis and evaluating the metric of interest. The objective was to determine if increasing the amount of data would improve the overall evaluation metric and understand the impact of training data variability on classifier predictions. Despite considering split datasets, it was observed that as the dataset size increased, the score also increased. This suggests that feeding more data to the classifier is likely to enhance its performance.
 
 <img width="458" alt="image" src="https://github.com/cheerspankaj/MADS_Milestone-2/assets/82276130/e4f37ebc-81c8-4255-a458-2859c4133bf5">
+
 Figure: Learning Curve for Random Forest Classifier, source: Project Code
 
