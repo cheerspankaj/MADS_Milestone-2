@@ -12,8 +12,10 @@ Data source: [Link](https://www.kaggle.com/t/5a1872e494574cc7bbf433fa8f4687d9).
 ## Datasets
 The primary dataset used for training the model is "WikiLarge_Train.csv", containing 416,768 english (mostly English but does contain
 other languages as well) sentences with a label for each sentence.
+
 0: the sentence does NOT need to be simplified.
 1: the sentence DOES need to be simplified.
+
 The test data contains “WikiLarge_Test.csv” 119,092 sentences that are unlabeled.
 data source:[Link](https://www.kaggle.com/competitions/umich-siads-696-f22-predicting-text-difficulty/data)
 
