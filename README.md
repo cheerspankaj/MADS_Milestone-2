@@ -75,9 +75,23 @@ Based on the initial analysis, Random forest classifier selected for evaluation 
 
 <img width="839" alt="image" src="https://github.com/cheerspankaj/MADS_Milestone-2/assets/82276130/23043965-ad1b-4c3a-aaf6-dd1d8154f83b">
 
-Source: Project Report section Model Evaluation and Performance
+Source: Project Notebook Code
 
 ### Failure Analysis
 
 For Logistic Regression, Random Forest, and BERT models, we employed Local Interpretable Model-Agnostic Explanations (LIME) to gain insights into local model interpretability. LIME operates by modifying individual data samples and observing how these modifications impact the output. Our goal was to understand why specific predictions were made and identify the influential variables. The output provided by LIME highlights the contribution of the top-6 features towards the model predictions. Please refer project report section "Failure Analysis" for more details.
+
+### Sensitivity Analysis
+
+To assess the model's sensitivity and generalizability, we conducted sensitivity analysis using the best extracted parameters. Specifically, we focused on max_depth and n_estimators as the parameters of interest. By plotting these parameters against the accuracy scores, we found that the model performed optimally with a max depth of 9. Choosing a higher max depth led to a drop in the score, indicating the risk of overfitting or underfitting. Additionally, when analyzing the hyperparameter n_estimators, we noticed a slight increase in the score at a value of 300, without any change in the training score.
+
+<img width="784" alt="image" src="https://github.com/cheerspankaj/MADS_Milestone-2/assets/82276130/0f7c30a1-0b0d-4815-a16d-01990fcbbb10">
+Figure: Sensitivity Analysis with max_depth and n_estimators, source: Project Code
+
+### Learning Curve
+
+The learning curve analysis involved plotting the amount of training data on the x-axis and evaluating the metric of interest. The objective was to determine if increasing the amount of data would improve the overall evaluation metric and understand the impact of training data variability on classifier predictions. Despite considering split datasets, it was observed that as the dataset size increased, the score also increased. This suggests that feeding more data to the classifier is likely to enhance its performance.
+
+<img width="458" alt="image" src="https://github.com/cheerspankaj/MADS_Milestone-2/assets/82276130/e4f37ebc-81c8-4255-a458-2859c4133bf5">
+Figure: Learning Curve for Random Forest Classifier, source: Project Code
 
