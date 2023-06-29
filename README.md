@@ -14,6 +14,7 @@ The primary dataset used for training the model is "WikiLarge_Train.csv", contai
 other languages as well) sentences with a label for each sentence.
 
 0: the sentence does NOT need to be simplified.
+
 1: the sentence DOES need to be simplified.
 
 The test data contains “WikiLarge_Test.csv” 119,092 sentences that are unlabeled.
