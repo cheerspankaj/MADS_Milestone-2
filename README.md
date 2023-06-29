@@ -151,4 +151,5 @@ Analysis result suggests that adding sentence topic as a feature from LDA topic 
 We aimed to identify clusters within a cleaned text dataset. The dataset was transformed into a sparse format using TFIDF vectorization, resulting in a random sample of 50,000 training instances with approximately 2,000 features. To determine the appropriate number of clusters (K) for K-means clustering, we employed "The Elbow Method" technique.
 
 <img width="688" alt="image" src="https://github.com/cheerspankaj/MADS_Milestone-2/assets/82276130/f2505bce-ea9d-458e-af4c-abd4b2ee2425">
+
 *source: Project Code*
