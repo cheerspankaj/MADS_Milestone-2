@@ -63,5 +63,15 @@ We also explored a Neural Network model, specifically the Multilayer Perceptron 
 
 ### Hyper-Parameter Tuning
 
-To optimize the model's performance, we conducted hyperparameter tuning using GridSearchCV. This involved trying different combinations of values to identify the model with the lowest error metric. By employing GridSearchCV for the RandomForest classifier and exploring various regularization parameters, we achieved improved accuracy scores of 0.71. This step was time-consuming, taking over 4 hours to execute and select the best parameters. The selected parameters for hyperparameter tuning included 'criterion' (gini or entropy), 'bootstrap' (True), 'max_features' (auto or sqrt), and 'n_estimators' (100 or 200). Additionally, based on sensitivity analysis, we allowed the model to determine the 'max_depth' parameter.
+To optimize the model's performance, we conducted hyperparameter tuning using GridSearchCV. This involved trying different combinations of values to identify the model with the lowest error metric. By employing GridSearchCV for the RandomForest classifier and exploring various regularization parameters, we achieved improved accuracy scores of 0.71. 
+
+The selected parameters for hyperparameter tuning included 'criterion' (gini or entropy), 'bootstrap' (True), 'max_features' (auto or sqrt), and 'n_estimators' (100 or 200). Additionally, based on sensitivity analysis, we allowed the model to determine the 'max_depth' parameter.
+
+### Model Evaluation and Performance
+
+Based on the initial analysis, Random forest classifier selected for evaluation pipelines. Below figures show the model evaluation analysis.
+
+<img width="853" alt="image" src="https://github.com/cheerspankaj/MADS_Milestone-2/assets/82276130/d347fcee-0158-460f-9adf-48875d14e903">
+
+Source: Project Report section Model Evaluation and Performance
 
