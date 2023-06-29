@@ -142,7 +142,7 @@ LDA (Latent Dirichlet Allocation) was used for topic modeling, which aims to dis
 #### Insights
 Analysis result suggests that adding sentence topic as a feature from LDA topic modeling did not help to improve Logistic regression model score, precision and recall value.
 
-<img width="745" alt="image" src="https://github.com/cheerspankaj/MADS_Milestone-2/assets/82276130/5746e2d9-6b4d-48f2-9a20-d9b58e5d3eda">
+<img width="748" alt="image" src="https://github.com/cheerspankaj/MADS_Milestone-2/assets/82276130/cb50cf1a-7a03-4186-b201-1d4011ee7518">
 
 *Figure1: Precision-Recall without LDA topic   Figure2: Precision-Recall with LDA Topics source: Project Code*
 
