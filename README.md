@@ -97,7 +97,28 @@ To assess the model's sensitivity and generalizability, we conducted sensitivity
 
 The learning curve analysis involved plotting the amount of training data on the x-axis and evaluating the metric of interest. The objective was to determine if increasing the amount of data would improve the overall evaluation metric and understand the impact of training data variability on classifier predictions. Despite considering split datasets, it was observed that as the dataset size increased, the score also increased. This suggests that feeding more data to the classifier is likely to enhance its performance.
 
-<img width="458" alt="image" src="https://github.com/cheerspankaj/MADS_Milestone-2/assets/82276130/e4f37ebc-81c8-4255-a458-2859c4133bf5">
+<img width="416" alt="image" src="https://github.com/cheerspankaj/MADS_Milestone-2/assets/82276130/38246e02-ac1e-457e-93ec-dee2a26b2fe9">
 
 *Figure: Learning Curve for Random Forest Classifier, source: Project Code*
+
+## BERT Pre-Trained Model
+
+To enhance the overall performance of our model and explore advanced models in NLP, we incorporated BERT pretrained models from Hugging Face. BERT, an acronym for Bidirectional Encoder Representations from Transformers, is a recent model in the field of NLP designed to assist with various language tasks, including text classification, question answering, abstract text summarization, translation, and more.
+
+In our analysis of the BERT model, we explored various parameters and configurations. The BERT "large" version consistently outperformed the "base" version by around 1-2 percentage points in terms of accuracy. However, we encountered memory issues when using a batch size of 128 and sentence length of 128 on a single GPU. We found that a batch size of 64 and sentence length of 64 yielded slightly better results than a batch size and sentence length of 32. Comparing the regular BERT model with the multilingual version, we observed minimal differences in overall accuracy. Surprisingly, the parameter that had a significant impact on the model's performance was the dropout rate. Dropout rates of 50% or higher resulted in a drastic decrease in accuracy, resembling random guessing. The best overall score we achieved was with a 1% dropout rate and a batch size and sentence length of 64 using the BERT "large" version. This yielded a score of 80.949% on Kaggle, close to the 81% mark. To further improve the score using BERT, future efforts should consider utilizing BERT "large" with a batch size and sentence length of 128 or higher, as well as leveraging multiple GPUs. Our analysis of a randomly selected subset of 100,000 sentences confirmed that a dropout rate of 50% significantly degraded the validation accuracy from approximately 70% to 58%.
+
+<img width="825" alt="image" src="https://github.com/cheerspankaj/MADS_Milestone-2/assets/82276130/c0f76fdf-a8e7-43a3-9b3a-9e932f6e7ccc">
+
+*Figures: BERT validation performance on 100,000 random sentences*
+
+## Unsupervised Learning
+
+### Principle Component Analysis (PCA)
+
+PCA (Principal Component Analysis) was used to visualize high-dimensional data in two dimensions and identify patterns in the provided training dataset. The hypothesis was that there might be mixed language sentences, such as French, in the dataset, which would appear differently clustered in a two-dimensional space. Regular PCA and Kernel PCA with a radial basis function were applied, but the results were similar. The overall class separation in PCA was not ideal, but clear patterns were observed in the right part of the graph, indicating sentences in different languages like French, German, Italian, and Spanish. It was unclear if mixed languages were present in the other part of the graph where classes overlapped. The purpose of PCA was to identify patterns and explore the potential for improving supervised approaches in predicting text difficulty. Further analysis is needed to separate multi-language sentences and build more accurate classifiers. Excluding English stop words compressed the two components even further, suggesting that removing stop words resulted in fewer features and potentially clearer patterns. Both visualizations showed a "V" pattern, which could be attributed to TF-IDF or other patterns in the Kaggle dataset. The "V" pattern was more pronounced in the visualization without stop words due to reduced noise.
+
+<img width="736" alt="image" src="https://github.com/cheerspankaj/MADS_Milestone-2/assets/82276130/59feb90b-e69c-4c26-a740-945ff70ae984">
+
+*Figure1: PCA, N=2, Includes stop words    Figure2: PCA, N=2, Excludes stop words*
+*Blue Color = difficult/ label as 1, Orange Color = Simple / label as O*
 
