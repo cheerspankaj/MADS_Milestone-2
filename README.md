@@ -77,5 +77,7 @@ Based on the initial analysis, Random forest classifier selected for evaluation 
 
 Source: Project Report section Model Evaluation and Performance
 
+### Failure Analysis
 
+For Logistic Regression, Random Forest, and BERT models, we employed Local Interpretable Model-Agnostic Explanations (LIME) to gain insights into local model interpretability. LIME operates by modifying individual data samples and observing how these modifications impact the output. Our goal was to understand why specific predictions were made and identify the influential variables. The output provided by LIME highlights the contribution of the top-6 features towards the model predictions. Please refer project report section "Failure Analysis" for more details.
 
