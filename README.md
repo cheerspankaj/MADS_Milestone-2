@@ -73,5 +73,9 @@ Based on the initial analysis, Random forest classifier selected for evaluation 
 
 <img width="853" alt="image" src="https://github.com/cheerspankaj/MADS_Milestone-2/assets/82276130/d347fcee-0158-460f-9adf-48875d14e903">
 
+<img width="839" alt="image" src="https://github.com/cheerspankaj/MADS_Milestone-2/assets/82276130/23043965-ad1b-4c3a-aaf6-dd1d8154f83b">
+
 Source: Project Report section Model Evaluation and Performance
+
+
 
