@@ -18,6 +18,6 @@ Link:
 
 3rd party datasets: 
 provided by the Kaggle competition website:
-- dale_chall.txt : “This is the Dale-Chall list of ~3000 elementary English words that are typically familiar to 80% of American 4th grade students (in the 90s)” (source Kaggle)
-- Concreteness_ratings_Brysbaert_et_al_BRM.txt : “Concreteness ratings for about 40k English words.” (source Kaggle)
-- AoA_51715_words.csv :: “List of approximate age (In years) when a word was learned, for 50k English words.” (source Kaggle)
+- dale_chall.txt : “This is the Dale-Chall list of ~3000 elementary English words that are typically familiar to 80% of American 4th grade students (in the 90s)” ([source]([url](https://www.kaggle.com/competitions/umich-siads-696-f22-predicting-text-difficulty))
+- Concreteness_ratings_Brysbaert_et_al_BRM.txt : “Concreteness ratings for about 40k English words." ([source][https://www.kaggle.com/competitions/umich-siads-696-f22-predicting-text-difficulty])
+- AoA_51715_words.csv :: “List of approximate age (In years) when a word was learned, for 50k English words.” ([source][https://www.kaggle.com/competitions/umich-siads-696-f22-predicting-text-difficulty)https://www.kaggle.com/competitions/umich-siads-696-f22-predicting-text-difficulty])
