@@ -41,3 +41,18 @@ We initially extracted 20 features from the provided datasets (listed in Appendi
 
 Finally, we transformed the entire dataset of features into a vectorized form readable by machine learning algorithms for text classification purposes.
 
+## Machine Learning Models
+
+Following Machine Learning models developed for model selection and uploaded to this repository.
+
+- Dummy Classifier
+- Decision Tree
+- Naive Bayes
+- Gradient Boositng
+- Logistic Regression 
+- Random Forest
+- NN MLP
+
+<img width="748" alt="image" src="https://github.com/cheerspankaj/MADS_Milestone-2/assets/82276130/a460fadc-5165-4a6e-8d40-811d1a2cb6e3">
+
+
