@@ -55,7 +55,7 @@ Following Machine Learning models developed for model selection and uploaded to 
 
 <img width="750" alt="image" src="https://github.com/cheerspankaj/MADS_Milestone-2/assets/82276130/06e5b86b-7545-4ce6-bb72-e71fd1885d32">
 
-_Table: Summarizing the accuracy score for all models assessed
+*Table: Summarizing the accuracy score for all models assessed*
 
 The problem at hand involves binary text classification. We assessed several supervised learning classification models to predict the class labels. We started with a Dummy classifier as a baseline model and compared it with other models. For linear models, we applied Logistic Regression and used the TF-IDF feature for comparison. We also utilized Naive Bayes (BernoulliNB) classifiers, which are efficient for text data classification.
 
@@ -75,11 +75,11 @@ Based on the initial analysis, Random forest classifier selected for evaluation 
 
 <img width="847" alt="image" src="https://github.com/cheerspankaj/MADS_Milestone-2/assets/82276130/bc3fc2cc-ecf3-45ef-a6ad-eade3d412375">
 
-Figure: Classification Report and Confusion Matrix for Random Forest Classifier, source: Project Code
+*Figure: Classification Report and Confusion Matrix for Random Forest Classifier, source: Project Code*
 
 <img width="816" alt="image" src="https://github.com/cheerspankaj/MADS_Milestone-2/assets/82276130/6b227e9c-c0d8-4dd7-92dc-a8efe3984bc2">
 
-Figure: Precision Recall and ROC-AUC curve for Random Forest Classifier, Source: Project Code
+*Figure: Precision Recall and ROC-AUC curve for Random Forest Classifier, Source: Project Code*
 
 ### Failure Analysis
 
@@ -91,7 +91,7 @@ To assess the model's sensitivity and generalizability, we conducted sensitivity
 
 <img width="784" alt="image" src="https://github.com/cheerspankaj/MADS_Milestone-2/assets/82276130/0f7c30a1-0b0d-4815-a16d-01990fcbbb10">
 
-Figure: Sensitivity Analysis with max_depth and n_estimators, source: Project Code
+*Figure: Sensitivity Analysis with max_depth and n_estimators, source: Project Code*
 
 ### Learning Curve
 
@@ -99,5 +99,5 @@ The learning curve analysis involved plotting the amount of training data on the
 
 <img width="458" alt="image" src="https://github.com/cheerspankaj/MADS_Milestone-2/assets/82276130/e4f37ebc-81c8-4255-a458-2859c4133bf5">
 
-Figure: Learning Curve for Random Forest Classifier, source: Project Code
+*Figure: Learning Curve for Random Forest Classifier, source: Project Code*
 
