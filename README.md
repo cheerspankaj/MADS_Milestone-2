@@ -109,7 +109,7 @@ In our analysis of the BERT model, we explored various parameters and configurat
 
 <img width="825" alt="image" src="https://github.com/cheerspankaj/MADS_Milestone-2/assets/82276130/c0f76fdf-a8e7-43a3-9b3a-9e932f6e7ccc">
 
-*Figures: BERT validation performance on 100,000 random sentences*
+*Figures: BERT validation performance on 100,000 random sentences, source: Project Code*
 
 ## Unsupervised Learning
 
@@ -120,5 +120,35 @@ PCA (Principal Component Analysis) was used to visualize high-dimensional data i
 <img width="736" alt="image" src="https://github.com/cheerspankaj/MADS_Milestone-2/assets/82276130/59feb90b-e69c-4c26-a740-945ff70ae984">
 
 *Figure1: PCA, N=2, Includes stop words    Figure2: PCA, N=2, Excludes stop words*
-*Blue Color = difficult/ label as 1, Orange Color = Simple / label as O*
+*Blue Color = difficult/ label as 1, Orange Color = Simple / label as 0  source: Project Code*
 
+### Truncated Singular Value Decomposition (Truncated SVD)
+
+We also performed truncated SVD on the TF-IDF vectorizer training data set to look for visual patterns. Unfortunately, this resulted in similar patterns found above within PCA. The graphical results look very similar however they appear to be mostly rotated 180 degrees compared to the PCA plots above.
+
+<img width="647" alt="image" src="https://github.com/cheerspankaj/MADS_Milestone-2/assets/82276130/163f8e8b-02ac-460b-b727-e5df3b1d2b1f">
+
+*Figure1: PCA, N=2, Includes stop words    Figure2: PCA, N=2, Excludes stop words*
+*blude color = difficult / label as 1, orange color = simple / label as 0 source: Project Code*
+
+### Latent Dirichlet Allocation (LDA)
+
+LDA (Latent Dirichlet Allocation) was used for topic modeling, which aims to discover abstract topics from a collection of documents. The focus was on extracting high-quality, clear, and meaningful topics. The process involved data preprocessing, training the LDA model using Gensim, computing perplexity and coherence values, determining the optimal number of topics, visualizing topic allocation, and analyzing topics and terms using pyLDAvis. The dominant topic for each document in the training dataset was derived, and a comparison was made between logistic regression models with and without the topic feature, considering model score, precision, and recall.
+
+<img width="803" alt="image" src="https://github.com/cheerspankaj/MADS_Milestone-2/assets/82276130/4216079f-ba64-4041-9ee5-5ae20a0ac02d">
+
+*Figure: Top 40 Topics and associated Terms Visualization using pyLDAvis source:Project code*
+
+#### Insights
+Analysis result suggests that adding sentence topic as a feature from LDA topic modeling did not help to improve Logistic regression model score, precision and recall value.
+
+<img width="745" alt="image" src="https://github.com/cheerspankaj/MADS_Milestone-2/assets/82276130/5746e2d9-6b4d-48f2-9a20-d9b58e5d3eda">
+
+*Figure1: Precision-Recall without LDA topic   Figure2: Precision-Recall with LDA Topics source: Project Code*
+
+### Clustering
+
+We aimed to identify clusters within a cleaned text dataset. The dataset was transformed into a sparse format using TFIDF vectorization, resulting in a random sample of 50,000 training instances with approximately 2,000 features. To determine the appropriate number of clusters (K) for K-means clustering, we employed "The Elbow Method" technique.
+
+<img width="688" alt="image" src="https://github.com/cheerspankaj/MADS_Milestone-2/assets/82276130/f2505bce-ea9d-458e-af4c-abd4b2ee2425">
+*source: Project Code*
